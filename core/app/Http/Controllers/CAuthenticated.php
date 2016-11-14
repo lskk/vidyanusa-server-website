@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Auth;
 
 class CAuthenticated extends Controller
 {
@@ -15,7 +16,18 @@ class CAuthenticated extends Controller
     }
 
     function index(){
-        return view('authenticated/beranda');
+        $user = Auth::user();
+        //Penampilan beranda berdasarkan perannya
+        switch ($user->peran){
+            case 3://guru
+                return "Dash guru";
+                ;break;
+            case 4://siswa
+
+                return view('authenticated.siswa.beranda');
+                ;break;
+        }
+
     }
 
     function gallery(){

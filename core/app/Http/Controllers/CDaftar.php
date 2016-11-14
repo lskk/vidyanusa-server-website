@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\MPoints;
 use App\MStudents;
+use App\MTeachers;
 use App\MUser;
 use Illuminate\Http\Request;
 use DB;
@@ -78,6 +80,20 @@ class CDaftar extends Controller
         $user->peran= 3;
         $user->save();
 
+        //Ambil id user berdasarkan email
+        $ids = DB::table('users')
+            ->where('email','=',$request['email'])
+            ->get();
+
+        $idf = NULL;
+        foreach ($ids as $id) {
+            $idf = $id->id;
+        }
+        $teacher = new MTeachers();
+        $teacher->id_user = $idf;
+        $teacher->sekolah = $request['sekolah'];
+        $teacher->save();
+
         Auth::attempt(['email' => $request['email'],'username' => $request['username'],'peran' => 3
             ,'password' => $request['password']]);
 
@@ -116,6 +132,7 @@ class CDaftar extends Controller
 
             //ambil id user berdasarkan email
             $ids = DB::table('users')
+                        ->where('email','=',$request['email'])
                         ->get();
 
             $idf = NULL;
@@ -126,6 +143,11 @@ class CDaftar extends Controller
             $student->id_user = $idf;
             $student->kelas = $kelas;
             $student->save();
+
+            $point = new MPoints();
+            $point->id_user = $idf;
+            $point->poin = 0;
+            $point->save();
 
             Auth::attempt(['email' => $request['email'],'username' => $request['username'],'peran' => 4
                 ,'password' => $request['password']]);

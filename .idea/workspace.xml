@@ -21,57 +21,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/resources/views/index.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="187" column="50" selection-start-line="187" selection-start-column="50" selection-end-line="187" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CAuthenticated.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/app/Http/Controllers/CAuthenticated.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="beranda.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/beranda.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CDaftar.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+            <state relative-caret-position="165">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <element signature="e#40#58#0#PHP" expanded="true" />
-                <element signature="e#1099#1251#0#PHP" expanded="false" />
-                <element signature="e#2203#4099#0#PHP" expanded="false" />
-                <marker date="1479119920000" expanded="false" signature="262:399" ph="..." />
-                <marker date="1479119920000" expanded="false" signature="1024:1092" ph="..." />
+                <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MClasses.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/MClasses.php">
+      <file leaf-file-name="beranda.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/siswa/beranda.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CDaftar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
+              <folding>
+                <element signature="e#40#56#0#PHP" expanded="true" />
+                <element signature="e#1135#1287#0#PHP" expanded="false" />
+                <marker date="1479133060000" expanded="false" signature="298:435" ph="..." />
+                <marker date="1479133060000" expanded="false" signature="1060:1128" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MTeachers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/MTeachers.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -87,20 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="daftar_siswa.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/resources/views/daftar_siswa.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="63" column="48" selection-start-line="63" selection-start-column="48" selection-end-line="63" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="daftar_guru.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/resources/views/daftar_guru.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
+            <state relative-caret-position="-360">
               <caret line="29" column="82" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="82" />
               <folding />
             </state>
@@ -110,18 +101,28 @@
       <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/resources/views/login.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="570">
               <caret line="38" column="26" selection-start-line="34" selection-start-column="20" selection-end-line="38" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/app/Http/routes.php">
+      <file leaf-file-name="template.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/resources/views/templates/template.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            <state relative-caret-position="-1020">
+              <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MPoints.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/app/MPoints.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -136,7 +137,6 @@
         <option value="$PROJECT_DIR$/core/.env" />
         <option value="$PROJECT_DIR$/core/config/database.php" />
         <option value="$PROJECT_DIR$/core/app/MUser.php" />
-        <option value="$PROJECT_DIR$/core/app/Http/Controllers/CAuthenticated.php" />
         <option value="$PROJECT_DIR$/core/resources/views/login.blade.php" />
         <option value="$PROJECT_DIR$/core/resources/views/daftar_guru.blade.php" />
         <option value="$PROJECT_DIR$/core/resources/views/authenticated/beranda.blade.php" />
@@ -146,8 +146,13 @@
         <option value="$PROJECT_DIR$/core/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/core/app/MClasses.php" />
         <option value="$PROJECT_DIR$/core/app/MStudents.php" />
-        <option value="$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php" />
         <option value="$PROJECT_DIR$/core/resources/views/daftar_siswa.blade.php" />
+        <option value="$PROJECT_DIR$/core/app/MTeachers.php" />
+        <option value="$PROJECT_DIR$/core/resources/views/templates/template.blade.php" />
+        <option value="$PROJECT_DIR$/core/app/MPoints.php" />
+        <option value="$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php" />
+        <option value="$PROJECT_DIR$/core/app/Http/Controllers/CAuthenticated.php" />
+        <option value="$PROJECT_DIR$/core/resources/views/authenticated/siswa/beranda.blade.php" />
       </list>
     </option>
   </component>
@@ -267,6 +272,36 @@
               <option name="myItemId" value="authenticated" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="siswa" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vidyanusa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vidyanusa" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authenticated" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -312,11 +347,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="routes&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/routes.php&#10;index.blade&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/index.blade.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/index.php&#10;cau&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CAuthenticated.php&#10;c&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;cdaftar&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;cda&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;login.blade&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/login.blade.php&#10;ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CAuthenticated.php&#10;database&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/config/database.php&#10;.env&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/.env&#10;daftar&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/daftar_siswa.blade.php&#10;beran&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa_fresh/core/resources/views/authenticated/beranda.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="CAuth&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CAuthenticated.php&#10;routes&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/routes.php&#10;CD&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;mpo&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/MPoints.php&#10;CDaf&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;mpoi&#9;null&#9;null&#10;template&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/templates/template.blade.php&#10;logi&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/login.blade.php&#10;MTeac&#9;null&#9;null&#10;index.blade&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/index.blade.php&#10;index&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/index.php&#10;cau&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CAuthenticated.php&#10;c&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;cdaftar&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;cda&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CDaftar.php&#10;login.blade&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/login.blade.php&#10;ca&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/app/Http/Controllers/CAuthenticated.php&#10;database&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/config/database.php&#10;.env&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/.env&#10;daftar&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa/core/resources/views/daftar_siswa.blade.php&#10;beran&#9;FILE&#9;file:///Applications/MAMP/htdocs/vidyanusa_fresh/core/resources/views/authenticated/beranda.blade.php" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/resources/views/authenticated/siswa" />
+      <recent name="$PROJECT_DIR$/core/resources/views/authenticated" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/core/resources/views" />
@@ -381,12 +420,12 @@
       <option name="presentableId" value="Default" />
       <updated>1479082315319</updated>
       <workItem from="1479082316652" duration="886000" />
-      <workItem from="1479083589451" duration="12263000" />
+      <workItem from="1479083589451" duration="17393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13149000" />
+    <option name="totallyTimeSpent" value="18279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="726" extended-state="6" />
@@ -398,7 +437,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.170347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3154574" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -427,11 +466,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php</url>
-          <line>36</line>
+          <line>38</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php</url>
-          <line>135</line>
+          <line>157</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -448,7 +487,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/beranda.blade.php">
+    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/siswa/beranda.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -460,14 +499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/templates/template.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -516,7 +547,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/galeri.blade.php">
+    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/siswa/galeri.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
@@ -524,7 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/profil.blade.php">
+    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/siswa/profil.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
@@ -548,58 +579,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/Http/Controllers/CAuthenticated.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/beranda.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/MClasses.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/app/MStudents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="38" column="26" selection-start-line="34" selection-start-column="20" selection-end-line="38" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/resources/views/daftar_guru.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="29" column="82" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="82" />
           <folding />
         </state>
       </provider>
@@ -612,17 +595,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/MTeachers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/resources/views/daftar_guru.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="29" column="82" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/resources/views/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="26" selection-start-line="34" selection-start-column="20" selection-end-line="38" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/resources/views/templates/template.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="0" column="10" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/MPoints.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/MStudents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/app/Http/Controllers/CDaftar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="86" column="44" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
+        <state relative-caret-position="145">
+          <caret line="147" column="34" selection-start-line="147" selection-start-column="34" selection-end-line="147" selection-end-column="34" />
           <folding>
-            <element signature="e#40#58#0#PHP" expanded="true" />
-            <element signature="e#1099#1251#0#PHP" expanded="false" />
-            <element signature="e#2203#4099#0#PHP" expanded="false" />
-            <marker date="1479119920000" expanded="false" signature="262:399" ph="..." />
-            <marker date="1479119920000" expanded="false" signature="1024:1092" ph="..." />
+            <element signature="e#40#56#0#PHP" expanded="true" />
+            <element signature="e#1135#1287#0#PHP" expanded="false" />
+            <marker date="1479133060000" expanded="false" signature="298:435" ph="..." />
+            <marker date="1479133060000" expanded="false" signature="1060:1128" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/app/Http/Controllers/CAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/resources/views/authenticated/siswa/beranda.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="104" column="34" selection-start-line="104" selection-start-column="34" selection-end-line="104" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
