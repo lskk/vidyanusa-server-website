@@ -5,6 +5,22 @@
     }
 @endsection
 @section('main-content')
+    <?php
+    $user = Auth::user();
+    $users_info = DB::table('users')->where('id', '=', $user->id)->get();
+    $get_points = DB::table('points')->where('id_user', '=', $user->id)->get();
+
+    $bio = NULL;
+    $photo_profile = NULL;
+    $poinf = NULL;
+    foreach ($users_info as $user_info) {
+        $bio = $user_info->bio;
+        $photo_profile = $user_info->foto_profil;
+    }
+    foreach ($get_points as $get_point) {
+        $poinf = $get_point->poin;
+    }
+    ?>
     <div class="ui container">
         <div class="ui secondary pointing menu">
             <a class="item" href="{{url('beranda')}}">
@@ -59,22 +75,36 @@
             <div class="ui cards">
                 <div class="card">
                     <div class="image">
-                        <img src="{{url('/')}}/core/resources/assets/img/student.png" class="rounded image">
+                        <?php
+                        if($photo_profile == NULL){
+                        ?>
+                        <img src="http://167.205.7.228:8089/VidyaNusa/default-profile-picture.png"
+                             class="rounded image">
+                        <?php
+                        }else {
+                        ?>
+                        <img src="<?php echo $photo_profile;?>" class="rounded image">
+                        <?php
+                        }
+                        ?>
                     </div>
                     <div class="content">
-                        <div class="header">Hendra Permana</div>
+                        <div class="header"><?php echo $user->nama_lengkap;?></div>
                         <div class="meta">
-                            <a>@hynra</a>
+                            <a>@<?php echo $user->username;?></a>
                         </div>
                         <div class="description">
-                            Pelajar dari SMPN 01 Tasikmalaya
+                            <?php echo $bio;?>
                         </div>
                     </div>
                     <div class="extra content">
-
                         <span>
         <i class="star icon" style="color:#ffb70a;"></i>
-        15 Poin
+                            <?php
+                            if($poinf == NULL || $poinf == ''){
+                                echo 0;
+                            }else{ echo $poinf; }
+                            ?> Poin
       </span>
                     </div>
                 </div>

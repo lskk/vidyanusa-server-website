@@ -17,6 +17,7 @@ Route::get('login', function () {
     return view('login');
 });
 Route::post('login','CDaftar@login');
+Route::post('ubah_profile','CDaftar@ubah_profile');
 
 Route::get('logout','CDaftar@logout');
 

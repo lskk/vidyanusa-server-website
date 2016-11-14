@@ -5,6 +5,24 @@
     }
 @endsection
 @section('main-content')
+    <?php
+    $user = Auth::user();
+    $users_info = DB::table('users')->where('id', '=', $user->id)->get();
+    $get_points = DB::table('points')->where('id_user', '=', $user->id)->get();
+
+    $bio = NULL;
+    $photo_profile = NULL;
+    $poinf = NULL;
+    $nama_lengkap = NULL;
+    foreach ($users_info as $user_info) {
+        $bio = $user_info->bio;
+        $photo_profile = $user_info->foto_profil;
+        $nama_lengkap = $user_info->nama_lengkap;
+    }
+    foreach ($get_points as $get_point) {
+        $poinf = $get_point->poin;
+    }
+    ?>
     <div class="ui container">
         <div class="ui secondary pointing menu">
             <a class="item" href="{{url('beranda')}}">
@@ -59,22 +77,38 @@
             <div class="ui cards">
                 <div class="card">
                     <div class="image">
-                        <img src="{{url('/')}}/core/resources/assets/img/student.png" class="rounded image">
+                        <?php
+                        if($photo_profile == NULL){
+                        ?>
+                        <img src="http://167.205.7.228:8089/VidyaNusa/default-profile-picture.png"
+                             class="rounded image">
+                        <?php
+                        }else {
+                        ?>
+                        <img src="<?php echo $photo_profile;?>" class="rounded image">
+                        <?php
+                        }
+                        ?>
                     </div>
                     <div class="content">
-                        <div class="header">Hendra Permana</div>
+                        <div class="header"><?php echo $user->nama_lengkap;?></div>
                         <div class="meta">
-                            <a>@hynra</a>
+                            <a>@<?php echo $user->username;?></a>
                         </div>
                         <div class="description">
-                            Pelajar dari SMPN 01 Tasikmalaya
+                            <?php echo $bio;?>
                         </div>
                     </div>
                     <div class="extra content">
-
                         <span>
         <i class="star icon" style="color:#ffb70a;"></i>
-        15 Poin
+                            <?php
+                            if ($poinf == NULL || $poinf == '') {
+                                echo 0;
+                            } else {
+                                echo $poinf;
+                            }
+                            ?> Poin
       </span>
                     </div>
                 </div>
@@ -137,49 +171,60 @@
                             <div class="inline fields">
                                 <div class="sixteen wide field">
                                     <div class="four wide field">
-                                        <label>Sekolah</label>
-                                    </div>
-                                    <div class="twelve wide field">
-                                        SMPN 01 Tasikmalaya
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="inline fields">
-                                <div class="sixteen wide field">
-                                    <div class="four wide field">
                                         <label>Username</label>
                                     </div>
                                     <div class="twelve wide field">
-                                        @hynra
+                                        @<?php echo $user->username;?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="inline fields">
-                                <div class="sixteen wide field">
-                                    <div class="four wide field">
-                                        <label>Nama Lengkap</label>
+                            <form method="post" action="{{url('ubah_profile')}}">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+
+                                @if (count($errors) > 0)
+                                    <div class="ui ignored negative message">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
                                     </div>
-                                    <div class="twelve wide field">
-                                        <input type="text" placeholder="Hendra Permana">
+                                @endif
+                                @if ( Session::has('message') )
+                                    <div class="ui ignored success message">
+                                        {{ Session::get('message') }}
+                                    </div>
+                                @endif
+                                <div class="inline fields">
+                                    <div class="sixteen wide field">
+                                        <div class="four wide field">
+                                            <label>Nama Lengkap</label>
+                                        </div>
+                                        <div class="twelve wide field">
+                                            <input type="text" name="nama_lengkap" value="<?php echo $nama_lengkap;?>">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="inline fields">
-                                <div class="sixteen wide field">
-                                    <div class="four wide field">
-                                        <label>Biografi</label>
-                                    </div>
-                                    <div class="twelve wide field">
-                                        <textarea rows="5" id="text-area-kegiatan">Pelajar dari SMPN 01 Tasikmalaya</textarea>
+                                <div class="inline fields">
+                                    <div class="sixteen wide field">
+                                        <div class="four wide field">
+                                            <label>Biografi</label>
+                                        </div>
+                                        <div class="twelve wide field">
+                                            <textarea rows="5"
+                                                      id="text-area-kegiatan" name="biografi"><?php echo $bio;?></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                                <hr/>
+                                <button class="ui teal button" type="submit"><i class="edit icon"></i> Ubah</button>
+                            </form>
                         </div>
                     </div>
                 </div>
-                <div class="extra content">
+                <!--<div class="extra content">
                     <button class="ui teal button"><i class="edit icon"></i> Ubah</button>
-                </div>
+                </div>-->
 
             </div>
             <div class="ui card" style="width: 100%">
@@ -283,7 +328,7 @@
                                         <a>@aridho</a>
                                         <br/>
                                         <br/>
-                                        <i class="star icon" style="color:#ffb70a;" ></i>
+                                        <i class="star icon" style="color:#ffb70a;"></i>
                                         78 Poin
                                     </div>
 

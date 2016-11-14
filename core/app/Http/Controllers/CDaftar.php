@@ -159,4 +159,24 @@ class CDaftar extends Controller
         }
 
     }
+
+    function ubah_profile(Request $request){
+        $this->validate($request,[
+            "nama_lengkap" => "required",
+            "biografi" => "required"
+        ]);
+
+        $user = Auth::user();
+
+        $ubah = DB::table('users')
+            ->where('id', $user->id)
+            ->update(['nama_lengkap' => $request['nama_lengkap'],'bio' => $request['biografi']]);
+
+        if($ubah){
+            Session::flash('message', 'Berhasil mengubah data profil');
+            return Redirect::to('profil');
+        }else{
+            return "gagal konfirmasi";
+        }
+    }
 }

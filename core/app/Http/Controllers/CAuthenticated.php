@@ -31,10 +31,30 @@ class CAuthenticated extends Controller
     }
 
     function gallery(){
-        return view('authenticated/galeri');
+        $user = Auth::user();
+        //Penampilan beranda berdasarkan perannya
+        switch ($user->peran){
+            case 3://guru
+                return "Galeri guru";
+                ;break;
+            case 4://siswa
+
+                return view('authenticated.siswa.galeri');
+                ;break;
+        }
     }
 
     function profile(){
-        return view('authenticated/profil');
+        $user = Auth::user();
+        //Penampilan beranda berdasarkan perannya
+        switch ($user->peran){
+            case 3://guru
+                return "Galeri guru";
+                ;break;
+            case 4://siswa
+
+                return view('authenticated.siswa.profil');
+                ;break;
+        }
     }
 }

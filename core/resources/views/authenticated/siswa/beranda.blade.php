@@ -184,11 +184,11 @@
                         <div class="extra images">
                             <a><img src="{{url('/')}}/core/resources/assets/img/ibadah.png"></a>
                         </div>
-                        <div class="meta">
+                        <!--<div class="meta">
                             <a class="like">
                                 <i class="like icon"></i> 34 Like
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -206,11 +206,11 @@
                         <div class="extra images">
                             <a><img src="{{url('/')}}/core/resources/assets/img/kebersihan.png"></a>
                         </div>
-                        <div class="meta">
+                        <!--<div class="meta">
                             <a class="like">
                                 <i class="like icon"></i> 49 Like
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -228,11 +228,11 @@
                         <div class="extra images">
                             <a><img src="{{url('/')}}/core/resources/assets/img/game-farming.png"></a>
                         </div>
-                        <div class="meta">
+                        <!--<div class="meta">
                             <a class="like">
                                 <i class="like icon"></i> 77 Like
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -250,17 +250,17 @@
                         <div class="extra images">
                             <a><img src="{{url('/')}}/core/resources/assets/img/belajar.png"></a>
                         </div>
-                        <div class="meta">
+                        <!--<div class="meta">
                             <a class="like">
                                 <i class="like icon"></i> 48 Like
                             </a>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
 
             </div>
-            <button class="fluid ui button">Tampilkan lebih</button>
+            <!--<button class="fluid ui button">Tampilkan lebih</button>-->
         </div>
         <div class="three wide column">
             <div class="ui card">
