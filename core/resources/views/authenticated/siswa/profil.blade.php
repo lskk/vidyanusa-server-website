@@ -3,6 +3,11 @@
     #text-area-kegiatan{
     resize: none;
     }
+    .img-profile:hover {
+    opacity:0.5;
+    cursor: pointer;
+    cursor: hand;
+    }
 @endsection
 @section('main-content')
     <?php
@@ -45,6 +50,10 @@
                 <i class="talk icon"></i>
                 Forum
             </a>
+            <a class="item" href="#" target="_blank">
+                <i class="sticky note outline icon"></i>
+                Portofolio
+            </a>
             {{--<a class="item" href="{{url('/')}}">
                 Profile
             </a>--}}
@@ -77,19 +86,65 @@
             <div class="ui cards">
                 <div class="card">
                     <div class="image">
+
                         <?php
                         if($photo_profile == NULL){
                         ?>
+
                         <img src="http://167.205.7.228:8089/VidyaNusa/default-profile-picture.png"
-                             class="rounded image">
+                             class="rounded image img-profile">
+
                         <?php
                         }else {
                         ?>
-                        <img src="<?php echo $photo_profile;?>" class="rounded image">
+
+                        <img src="<?php echo $photo_profile;?>" class="rounded image img-profile">
+
                         <?php
                         }
                         ?>
+                        @section('js')
+                            $(".img-profile").click(function(){
+                                $('.ui.small.modal').modal('show');
+
+                            });
+                        @endsection
+                            <div class="ui small modal" style="margin-top: 0px;height: 43%;">
+
+                                <div class="header">Ganti photo</div>
+
+
+                                <div class="content">
+                                    <div class="ui ignored success message">
+                                        Ukuran maksimal 300kb
+                                    </div>
+                                    <div class="ui form">
+                                        <form action="{{url('ubah_photo')}}" method="post" enctype="multipart/form-data">
+                                            <input type="hidden" name="_token" value="{{ csrf_token() }}"/>
+
+                                            <div class="field">
+                                                <input type="file" name="photo"/>
+                                            </div>
+                                            <br/>
+                                            <div class="field">
+                                                <button class="ui teal button" type="submit"><i class="edit icon"></i> Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <!--<div class="actions">
+
+                                </div>-->
+
+
+                            </div>
+
+
                     </div>
+
+
+
                     <div class="content">
                         <div class="header"><?php echo $user->nama_lengkap;?></div>
                         <div class="meta">
@@ -212,7 +267,8 @@
                                         </div>
                                         <div class="twelve wide field">
                                             <textarea rows="5"
-                                                      id="text-area-kegiatan" name="biografi"><?php echo $bio;?></textarea>
+                                                      id="text-area-kegiatan"
+                                                      name="biografi"><?php echo $bio;?></textarea>
                                         </div>
                                     </div>
                                 </div>

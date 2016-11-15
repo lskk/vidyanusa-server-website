@@ -43,6 +43,10 @@
                 <i class="talk icon"></i>
                 Forum
             </a>
+            <a class="item" href="#" target="_blank">
+                <i class="sticky note outline icon"></i>
+                Portofolio
+            </a>
             {{--<a class="item" href="{{url('/')}}">
                 Profile
             </a>--}}

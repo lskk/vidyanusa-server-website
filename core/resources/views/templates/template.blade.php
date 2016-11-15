@@ -27,6 +27,7 @@ header('Content-Type: text/html');?>
 
     <style>
         @yield('css')
+
     </style>
     <script type="text/javascript" src="{{url('/')}}/core/resources/assets/js/modernizr.custom.32033.js"></script>
     <script type="text/javascript">
@@ -96,7 +97,7 @@ header('Content-Type: text/html');?>
          }
          });
          },5000);*/
-
+        @yield('js')
     });
     $('select.dropdown')
             .dropdown()

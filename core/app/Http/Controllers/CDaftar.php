@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use DB;
 use Auth;
 use Session;
-use App\Http\Requests;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Redirect;
 
 class CDaftar extends Controller
@@ -176,7 +176,53 @@ class CDaftar extends Controller
             Session::flash('message', 'Berhasil mengubah data profil');
             return Redirect::to('profil');
         }else{
-            return "gagal konfirmasi";
+            Session::flash('message', 'Terjadi kesalahan');
+            return Redirect::to('profil');
         }
+    }
+
+    public function random_string($length)
+    {
+        $key = '';
+        $keys = array_merge(range(0, 9), range('a', 'z'));
+
+        for ($i = 0; $i < $length; $i++) {
+            $key .= $keys[array_rand($keys)];
+        }
+
+        return $key;
+    }
+
+    function ubah_photo(Request $request){
+        $this->validate($request,[
+            "photo" => 'required|mimes:jpg,jpeg,png|Max:300'
+        ]);
+
+        $rename_berkas = $this->random_string(50) . '.' . Input::file('photo')->getClientOriginalExtension();
+
+        $ftp_server = "167.205.7.228";
+        $ftp_conn = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");
+
+        $login = ftp_login($ftp_conn, "ftpmanager", "Sabuga@123");
+
+        if (true === $login) {
+
+            ftp_put($ftp_conn, "/Assets/VidyaNusa/A/" . $rename_berkas, Input::file('photo')->getPathName(), FTP_BINARY);
+            ftp_close($ftp_conn);
+
+
+        } else {
+            ftp_close($ftp_conn);
+        }
+
+        $user = Auth::user();
+
+        DB::table('users')
+            ->where('id', $user->id)
+            ->update(['foto_profil' => 'http://167.205.7.228:8089/VidyaNusa/A/' . $rename_berkas]);
+
+
+        return Redirect::to('profil');
+
     }
 }
